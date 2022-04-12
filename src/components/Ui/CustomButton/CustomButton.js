@@ -1,0 +1,22 @@
+import React from "react";
+import Button from '@mui/material/Button';
+import { makeStyles } from '@mui/styles';
+import styles from './styles';
+
+const useStyles = makeStyles(styles);
+
+const CustomButton = ({ onClick, value, ...props }) => {
+    const classes = useStyles();
+
+    return (
+        <Button
+            onClick={ onClick }
+            className={ classes.button }
+            { ...props }
+        >
+            { value }
+        </Button>
+    )
+};
+
+export default CustomButton;

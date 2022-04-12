@@ -1,12 +1,13 @@
 import React from 'react';
 import Router from './router';
+import { ViewContainer } from './components';
 
 
 function App() {
   return (
-    <div>
+    <ViewContainer>
         <Router/>
-    </div>
+    </ViewContainer>
   );
 }
 

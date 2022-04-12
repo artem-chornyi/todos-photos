@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import { ScrollToTop } from '../components';
 import { publicRoutes } from './routes';
+import { Layout } from '../components'
 
 
 
@@ -11,11 +11,13 @@ const Router = () => {
     return (
         <>
             <Routes>
-                {
-                    routes.map(route => (
-                        <Route {...route} key={ route.path } />
-                    ))
-                }
+                <Route path='/' element={ <Layout/> } >
+                    {
+                        routes.map(route => (
+                            <Route {...route} key={ route.path || route.index } />
+                        ))
+                    }
+                </Route>
             </Routes>
         </>
     );

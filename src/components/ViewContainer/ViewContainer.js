@@ -4,16 +4,16 @@ import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const Wrapper = ({children}) => {
+const ViewContainer = ({children}) => {
     const classes = useStyles();
 
     return (
-        <div className={ classes.wrapper }>
-            <div className={ classes.content }>
+        <div className={ classes.viewContainer }>
+            <div className={ classes.wrapper }>
                 { children }
             </div>
         </div>
     )
 };
 
-export default Wrapper;
+export default ViewContainer;

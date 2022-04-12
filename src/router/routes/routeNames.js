@@ -1,7 +1,8 @@
 const routeNames = {
-    HOME: '/',
-    PHOTOS: '/photos',
-    TODOS: '/todos'
+    
+    PHOTOS: 'photos',
+    TODOS: 'todos',
+    NOTFOUNDPAGE: '*'
 }
 
 export default routeNames;

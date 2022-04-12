@@ -1,7 +1,14 @@
+import Layout from './Layout';
 import ScrollToTop from './scroll-to-top';
-import Wrapper from './Wrapper';
+import ViewContainer from './ViewContainer';
+import MainContent from './MainContent';
+import Preloader from './Preloader';
+
 
 export {
+    Layout,
     ScrollToTop,
-    Wrapper
+    ViewContainer,
+    MainContent,
+    Preloader
 };
