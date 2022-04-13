@@ -11,7 +11,7 @@ const Router = () => {
     return (
         <>
             <Routes>
-                <Route path='/todos-photos' element={ <Layout/> } >
+                <Route path='/' element={ <Layout/> } >
                     {
                         routes.map(route => (
                             <Route {...route} key={ route.path || route.index } />
