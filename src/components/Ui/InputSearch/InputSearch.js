@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import { makeStyles } from '@mui/styles';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const InputSearch = ({ value, onChange, onKeyDown, ...props }) => {
+const InputSearch = ({ value, onChange, onKeyDown, helperText, ...props }) => {
     const classes = useStyles();
 
     return (
@@ -15,7 +15,9 @@ const InputSearch = ({ value, onChange, onKeyDown, ...props }) => {
                 value={ value }
                 onKeyDown={ onKeyDown }
                 variant='outlined'
+                helperText={ helperText }
                 className={ classes.input }
+                error={ helperText ? true : false }
                 { ...props }
             />
         </div>

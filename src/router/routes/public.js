@@ -1,4 +1,4 @@
-import { Home, Photos, Todos, NotFoundPage } from '../../pages';
+import { Home, Photos, Todos, NotFoundPage, SinglePage } from '../../pages';
 import routeNames from './routeNames';
 
 const routes = [
@@ -13,6 +13,10 @@ const routes = [
     {
         path: routeNames.TODOS,
         element: <Todos/>,
+    },
+    {
+        path: routeNames.TODOS_BY_ID,
+        element: <SinglePage/>,
     },
     {
         path: routeNames.NOTFOUNDPAGE,

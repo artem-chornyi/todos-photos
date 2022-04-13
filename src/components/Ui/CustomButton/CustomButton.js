@@ -12,6 +12,7 @@ const CustomButton = ({ onClick, value, ...props }) => {
         <Button
             onClick={ onClick }
             className={ classes.button }
+            variant='contained'
             { ...props }
         >
             { value }

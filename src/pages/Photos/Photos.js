@@ -36,6 +36,7 @@ const Photos = () => {
                 setLoading(false);
             })
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[loading]);
 
     useEffect(() => {
@@ -44,6 +45,7 @@ const Photos = () => {
         } else {
             setDisabled(true);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [value]);
 
 
@@ -92,11 +94,9 @@ const Photos = () => {
                         onKeyDown={ onKeyDown }
                         label='Search by id'
                         helperText={ error }
-                        error={ error }
                     />
                     <CustomButton
                         value='Get photos'
-                        variant='contained'
                         onClick={ onClick }
                         disabled={ disabled }
                     />
