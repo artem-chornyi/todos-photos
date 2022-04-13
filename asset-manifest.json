@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/todos-photos/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/todos-photos/static/js/main.aeb75ba4.chunk.js",
+    "main.js.map": "/todos-photos/static/js/main.aeb75ba4.chunk.js.map",
+    "runtime-main.js": "/todos-photos/static/js/runtime-main.38278d48.js",
+    "runtime-main.js.map": "/todos-photos/static/js/runtime-main.38278d48.js.map",
+    "static/js/2.5959f492.chunk.js": "/todos-photos/static/js/2.5959f492.chunk.js",
+    "static/js/2.5959f492.chunk.js.map": "/todos-photos/static/js/2.5959f492.chunk.js.map",
+    "index.html": "/todos-photos/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/todos-photos/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.5959f492.chunk.js.LICENSE.txt": "/todos-photos/static/js/2.5959f492.chunk.js.LICENSE.txt",
+    "static/media/preloader.8e5faca5.svg": "/todos-photos/static/media/preloader.8e5faca5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38278d48.js",
+    "static/js/2.5959f492.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.aeb75ba4.chunk.js"
+  ]
+}
