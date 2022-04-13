@@ -1,7 +1,7 @@
 const routeNames = {
-    PHOTOS: 'photos',
-    TODOS: 'todos',
-    TODOS_BY_ID: 'todos/:id',
+    PHOTOS: 'todos-photos/photos',
+    TODOS: 'todos-photos/todos',
+    TODOS_BY_ID: 'todos-photos/todos/:id',
     NOTFOUNDPAGE: '*'
 }
 

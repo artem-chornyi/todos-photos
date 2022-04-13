@@ -78,12 +78,12 @@ const Todos = () => {
                     onClick={ handleOpen }
                 />
             </div>
-            <TodoList
+            {todos[0] && <TodoList
                 todos={ todos }
                 deleteTodo={ deleteTodo }
                 setTodoChenge={ setTodoChenge }
                 changeStatusTudo={ changeStatusTudo }
-            />
+            />}
             <CustomModal
                 hideBackdrop
                 open={ open }
