@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
+import { CustomButton } from '../../components/Ui';
 
 const SinglePage = () => {
     const todos = useSelector( state => state.todo.todos );
@@ -20,10 +21,20 @@ const SinglePage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    const onClick = () => {
+        navigate(-1)
+    };
+
     return (
-        <div>
-            { todo.text }
-        </div>
+        <>
+            <div>
+                { todo.text }
+            </div>
+            <CustomButton
+                value='Go back'
+                onClick={ onClick }
+            />
+        </>
     )
 }
 
